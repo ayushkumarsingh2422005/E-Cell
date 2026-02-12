@@ -134,7 +134,7 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4">
                 {/* Live Events Button */}
                 <motion.button
-                  className="w-full sm:w-auto px-8 py-4 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition-all shadow-lg hover:shadow-blue-500/30 backdrop-blur-sm"
+                  className="w-full sm:w-auto px-8 py-4 bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-all shadow-lg hover:shadow-blue-500/30 backdrop-blur-sm"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -156,7 +156,7 @@ export default function Home() {
 
                 {/* Achievements Button */}
                 <motion.button
-                  className="w-full sm:w-auto px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white text-white font-semibold rounded-full hover:bg-white/20 transition-all shadow-inner hover:shadow-white/20"
+                  className="w-full sm:w-auto px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white text-white font-semibold hover:bg-white/20 transition-all shadow-inner hover:shadow-white/20"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -180,7 +180,7 @@ export default function Home() {
               ].map((stat, index) => (
                 <motion.div
                   key={index}
-                  className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full"
+                  className="bg-white/10 backdrop-blur-sm px-4 py-2 "
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.5 + index * 0.1 }}

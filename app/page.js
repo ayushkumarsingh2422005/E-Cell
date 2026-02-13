@@ -105,7 +105,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            {/* Animated subtitle */}
+            {/* Animated subtitle
             <motion.p
               className="text-blue-500 font-medium mb-4 text-lg sm:text-xl"
               initial={{ opacity: 0, y: 20 }}
@@ -113,7 +113,7 @@ export default function Home() {
               transition={{ delay: 0.2 }}
             >
               Welcome to
-            </motion.p>
+            </motion.p> */}
 
             {/* Main title with responsive sizing */}
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
@@ -124,9 +124,8 @@ export default function Home() {
             </h1>
 
             {/* Description with better readability */}
-            <p className="text-lg sm:text-xl text-white/90 mb-8 max-w-2xl mx-auto sm:mx-0 leading-relaxed">
-              Discover a world of opportunities through our diverse range of student activities,
-              clubs, and events that shape future leaders.
+            <p className="text-lg sm:text-lg text-white/90 mb-8 max-w-2xl mx-auto sm:mx-0 leading-relaxed">
+              The Entrepreneurship Cell of NIT Jamshedpur serves as the catalyst for innovation and enterprise on campus. Through strategic mentorship and high-impact initiatives, we transform ideas into scalable ventures.
             </p>
 
             {/* Responsive button layout */}
@@ -174,7 +173,7 @@ export default function Home() {
             {/* Achievement badges */}
             <div className="mt-12 hidden sm:flex gap-6 justify-center sm:justify-start">
               {[
-                { number: "20+", label: "Active Clubs" },
+                { number: "20+", label: "Active Startups" },
                 { number: "1000+", label: "Students" },
                 { number: "50+", label: "Events/Year" }
               ].map((stat, index) => (

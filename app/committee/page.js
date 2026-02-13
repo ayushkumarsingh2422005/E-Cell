@@ -252,8 +252,8 @@ export default function Page() {
             {/* Header */}
             <div className="bg-white border-b pt-20">
                 <div className="container mx-auto px-4 py-8">
-                    <h1 className="text-3xl font-bold text-gray-900">Our Administration</h1>
-                    <p className="mt-2 text-gray-600">Know more about our administration</p>
+                    <h1 className="text-3xl font-bold text-gray-900">E-cell Committee</h1>
+                    <p className="mt-2 text-gray-600">Know more about our team</p>
                 </div>
             </div>
 

@@ -35,15 +35,10 @@ export default function Navbar({ whiteBg = false }) {
 
   const navItems = [
     { name: "Home", href: "/" },
-    { name: "Administration", href: "/administration" },
+    { name: "Committee", href: "/committee" },
     {
-      name: "Society",
-      href: "/",
-      submenu: [
-        { name: "URJA", href: "/society/urja" },
-        { name: "OJASS", href: "/society/ojass" },
-        { name: "CULFEST", href: "/society/culfest" },
-      ],
+      name: "Startups",
+      href: "/startups",
     },
     { name: "Notice", href: "/notices" },
     { name: "Events", href: "/events" },

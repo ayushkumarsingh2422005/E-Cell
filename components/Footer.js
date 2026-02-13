@@ -8,9 +8,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* About Column */}
           <div>
-            <h3 className="text-2xl font-bold text-white mb-4">NITJSR</h3>
+            <h3 className="text-2xl font-bold text-white mb-4">E-Cell</h3>
             <p className="text-gray-400 mb-4">
-              National Institute of Technology, Jamshedpur - Nurturing excellence in technology and innovation since 1960.
+              Enterprenuership Cell, NIT Jamshedpur serving innovation and high-impact initiatives.
             </p>
             <div className="flex space-x-4">
               <a href="https://nitjsr.ac.in/" target="_blank" className="text-gray-400 hover:text-white transition-colors">
@@ -35,9 +35,9 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><Link href="/society/urja" className="hover:text-white transition-colors">URJA</Link></li>
-              <li><Link href="/society/ojass" className="hover:text-white transition-colors">OJASS</Link></li>
-              <li><Link href="/society/culfest" className="hover:text-white transition-colors">Culfest</Link></li>
+              <li><Link href="/" className="hover:text-white transition-colors">Home</Link></li>
+              <li><Link href="/committee" className="hover:text-white transition-colors">Committee</Link></li>
+              <li><Link href="/startups" className="hover:text-white transition-colors">Startups</Link></li>
               <li><Link href="/events" className="hover:text-white transition-colors">Events</Link></li>
               <li><Link href="/achievements" className="hover:text-white transition-colors">Achievements</Link></li>
             </ul>
@@ -58,7 +58,7 @@ export default function Footer() {
                 <svg className="w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                <span><a href="mailto:office.sas@nitjsr.ac.in ">office.sas@nitjsr.ac.in </a></span>
+                <span><a href="mailto:office.sas@nitjsr.ac.in ">office.ecell@nitjsr.ac.in </a></span>
               </li>
               <li className="flex items-center space-x-3">
                 <svg className="w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">

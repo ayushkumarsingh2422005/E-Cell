@@ -34,7 +34,7 @@ const TermsAndConditions = () => {
                                 <ul className="list-disc pl-6 space-y-2 text-gray-600">
                                     <li>Use the website for legitimate purposes only</li>
                                     <li>Maintain appropriate conduct and respect for others</li>
-                                    <li>Not engage in any activity that may disrupt the website's functionality</li>
+                                    <li>Not engage in any activity that may disrupt the website&apos;s functionality</li>
                                     <li>Not attempt to gain unauthorized access to any part of the website</li>
                                 </ul>
                             </section>

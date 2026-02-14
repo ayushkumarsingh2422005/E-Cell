@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-
+import Link from 'next/link';
 export default function SuperAdminPage() {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(true);
@@ -148,9 +148,9 @@ export default function SuperAdminPage() {
           </form>
 
           <div className="mt-6 text-center">
-            <a href="/" className="text-sm text-blue-600 hover:text-blue-800">
+            <Link href="/" className="text-sm text-blue-600 hover:text-blue-800">
               Return to Home Page
-            </a>
+            </Link>
           </div>
         </div>
 

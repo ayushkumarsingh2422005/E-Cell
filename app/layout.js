@@ -14,15 +14,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Student Activity Center",
-  keywords: ["Student Activity Center"],
+  title: "E-Cell NIT Jamshedpur",
+  keywords: ["Entrepreneurship", "E-Cell", "NIT Jamshedpur", "Student Activities", "Events"],
   authors: [
     {
       name: "DigiCraft",
-      url: "https://sacnitjsr.org/",
+      url: "",
     },
   ],
-  description: "Student Activity Center is a platform for managing student activities and events of NIT Jamshedpur .",
+  description: "",
 };
 
 export default function RootLayout({ children }) {

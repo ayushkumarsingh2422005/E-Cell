@@ -19,7 +19,7 @@ const PrivacyPolicy = () => {
                             <section>
                                 <h2 className="text-xl font-semibold mb-4 text-gray-700">1. Introduction</h2>
                                 <p className="text-gray-600 leading-relaxed">
-                                    This Privacy Policy describes how the Student Activity Center (SAC) of the National Institute of Technology Jamshedpur (NIT JSR) collects, uses, and protects your personal information when you use our website. This policy is designed to help you understand how we handle your data and protect your privacy.
+                                   { "This Privacy Policy describes how the Student Activity Center (SAC) of the National Institute of Technology Jamshedpur (NIT JSR) collects, uses, and protects your personal information when you use our website. This policy is designed to help you understand how we handle your data and protect your privacy."}
                                 </p>
                             </section>
 
@@ -102,7 +102,9 @@ const PrivacyPolicy = () => {
                             <section>
                                 <h2 className="text-xl font-semibold mb-4 text-gray-700">8. Changes to This Policy</h2>
                                 <p className="text-gray-600 leading-relaxed">
-                                    We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page and updating the "Last updated" date.
+                                    
+                                    {
+                                    "We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page and updating the Last update date."}
                                 </p>
                             </section>
 

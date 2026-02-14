@@ -125,7 +125,7 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4">
                 {/* Live Events Button */}
                 <motion.button
-                  className="w-full sm:w-auto px-8 py-4 bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-all shadow-lg hover:shadow-blue-500/30 backdrop-blur-sm"
+                  className="w-full sm:w-auto px-8 py-4 bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-all shadow-lg hover:shadow-blue-500/30 backdrop-blur-sm rounded"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -160,7 +160,7 @@ export default function Home() {
 
                 {/* Achievements Button */}
                 <motion.button
-                  className="w-full sm:w-auto px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white text-white font-semibold hover:bg-white/20 transition-all shadow-inner hover:shadow-white/20"
+                  className="w-full sm:w-auto px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white text-white font-semibold hover:bg-white/20 transition-all shadow-inner hover:shadow-white/20 rounded"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -244,7 +244,7 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Startup Bulletin
+              E-Cell Bulletin
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Discover upcoming events, funding opportunities, hackathons, and
@@ -255,13 +255,13 @@ export default function Home() {
           <div className="max-w-5xl mx-auto">
             {loading ? (
               <div className="text-center py-16">
-                <div className="inline-block animate-spin rounded-full h-10 w-10 border-4 border-indigo-600 border-r-transparent"></div>
+                <div className="inline-block animate-spin h-10 w-10 border-4 border-indigo-600 border-r-transparent rounded-md"></div>
                 <p className="mt-4 text-gray-600">
                   Fetching latest opportunities...
                 </p>
               </div>
             ) : notices.length === 0 ? (
-              <div className="text-center py-16 bg-white  shadow-lg border border-gray-100">
+              <div className="text-center py-16 bg-white shadow-md shadow-gray-200 border border-gray-100 rounded-md">
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">
                   No Active Announcements
                 </h3>
@@ -274,7 +274,7 @@ export default function Home() {
                 {notices.map((notice, index) => (
                   <motion.div
                     key={notice._id}
-                    className={`group relative bg-white rounded-2xl shadow-md border border-gray-100 hover:shadow-xl transition-all duration-300 overflow-hidden`}
+                    className={`group relative bg-white shadow-md border shadow-gray-200 border-gray-100 hover:shadow-xl transition-all duration-300 overflow-hidden rounded-md`}
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -350,7 +350,7 @@ export default function Home() {
             <div className="text-center mt-12">
               <a
                 href="/notices"
-                className="inline-flex items-center justify-center bg-indigo-600 text-white px-8 py-3 font-semibold hover:bg-indigo-700 transition-all shadow-lg hover:shadow-xl"
+                className="inline-flex items-center justify-center rounded bg-indigo-600 text-white px-8 py-3 font-semibold hover:bg-indigo-700 transition-all shadow-lg hover:shadow-xl"
               >
                 View All Announcements
                 <svg
@@ -374,7 +374,7 @@ export default function Home() {
 
       {/* Activities Section - Redesigned */}
       <section className="py-20">
-        <div className="container mx-auto px-4 mb-20">
+        {/* <div className="container mx-auto px-4 mb-20">
           <motion.div
             className="text-center mb-16"
             initial={{ opacity: 0, y: 20 }}
@@ -389,7 +389,7 @@ export default function Home() {
               ventures through hands-on entrepreneurial experiences.
             </p>
           </motion.div>
-        </div>
+        </div> */}
 
         {[
           {
@@ -402,7 +402,7 @@ export default function Home() {
               { number: "20+", label: "Active Mentors" },
               { number: "10+", label: "Incubated Startups" },
             ],
-            color: "from-indigo-300 to-blue-200",
+            color: "from-indigo-600 to-blue-500",
             buttonText: "Explore Incubation",
             link: "/ecell/incubation",
           },
@@ -416,7 +416,7 @@ export default function Home() {
               { number: "1000+", label: "Participants" },
               { number: "5+", label: "Major Hackathons" },
             ],
-            color: "from-slate-800 to-purple-200",
+            color: "from-slate-600 to-purple-500",
             buttonText: "View Events",
             link: "/ecell/events",
           },
@@ -496,7 +496,7 @@ export default function Home() {
                   </div>
 
                   <motion.a
-                    className="bg-white text-gray-900 px-8 py-3  font-semibold hover:bg-white/90 transition-all"
+                    className="bg-white text-gray-900 px-8 py-3  font-semibold hover:bg-white/90 transition-all rounded"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     href={activity.link}
@@ -629,18 +629,18 @@ export default function Home() {
               {/* Left Column - Faculty Advisor */}
               <div className="md:w-1/3 bg-gray-50 p-6 border border-gray-200">
                 <div className="text-center">
-                  <div className="w-32 h-32 mx-auto mb-4 overflow-hidden border-4 border-indigo-700">
+                  <div className="w-40 h-40 mx-auto mb-4 overflow-hidden border-2">
                     <img
-                      src="/faculty-advisor.jpg"
+                      src="/dinesh.jpg"
                       alt="Faculty Advisor"
-                      width={128}
-                      height={128}
+                      width={200}
+                      height={200}
                       className="object-cover"
                     />
                   </div>
 
                   <h3 className="text-xl font-bold text-indigo-900 mb-2">
-                    Dr. [Faculty Name]
+                    Dr. DINESH KUMAR
                   </h3>
                   <p className="text-gray-700 mb-1">
                     Faculty Advisor, Entrepreneurship Cell
@@ -683,7 +683,7 @@ export default function Home() {
                         Monday to Friday, 10:00 AM - 5:00 PM
                         <br />
                         <span className="font-semibold">Contact:</span>{" "}
-                        ecell@nitjsr.ac.in
+                        dinesh.prod@nitjsr.ac.in
                       </p>
                     </div>
                   </div>
@@ -694,7 +694,7 @@ export default function Home() {
         </div>
       </section>
       {/*enterpreneurship statics section */}
-      <section className="py-20 bg-indigo-900 text-white">
+      {/* <section className="py-20 bg-indigo-900 text-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
             {[
@@ -721,7 +721,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Call to Action Section */}
       <section className="py-20 bg-gray-50">
@@ -744,7 +744,7 @@ export default function Home() {
 
               <Link
                 href={"/join"}
-                className="bg-indigo-600 text-white px-10 py-3 font-semibold hover:bg-indigo-700 transition-all"
+                className="bg-indigo-600 text-white px-10 py-3 font-semibold hover:bg-indigo-700 transition-all rounded"
               >
                 Join E-Cell
               </Link>

@@ -9,6 +9,7 @@ export default function Footer() {
           {/* About Column */}
           <div>
             <Image
+              alt="E-Cell Logo"
               src="/logo.png"
               width={100}
               height={100}

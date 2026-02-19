@@ -82,7 +82,7 @@ export default function Home() {
         {/* Background Image with mobile optimization */}
         <div className="absolute inset-0">
           <video
-            src="/bg.mp4"
+            src="/ecellbg.mp4"
             autoPlay
             loop
             muted
